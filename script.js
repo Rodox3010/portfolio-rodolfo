@@ -19,13 +19,13 @@ gsap.registerPlugin(ScrollTrigger);
                 ],
                 pdfs: [
                     {
-                        pdfThumbnail: "../img/academicos/revistacmique/revistacemique.jpg",
-                        pdfLink: "../img/academicos/revistacmique/revistacemique.pdf",
+                        pdfThumbnail: "/img/academicos/revistacmique/revistacemique.jpg",
+                        pdfLink: "/img/academicos/revistacmique/revistacemique.pdf",
                         pdfName: "Revista Cemique"
                     },
                     {
-                        pdfThumbnail: "../img/academicos/identidade_diagonal/diagonal.jpg",
-                        pdfLink: "../img/academicos/identidade_diagonal/diagonal.pdf",
+                        pdfThumbnail: "/img/academicos/identidade_diagonal/diagonal.jpg",
+                        pdfLink: "/img/academicos/identidade_diagonal/diagonal.pdf",
                         pdfName: "Identidade Diagonal"
                     }
                 ]
@@ -332,6 +332,7 @@ gsap.registerPlugin(ScrollTrigger);
         window.addEventListener('load', () => {
             gsap.to('.hero-text', { y: 0, opacity: 1, duration: 1.2, stagger: 0.2, ease: "power3.out" });
         });
+
 
 
 
