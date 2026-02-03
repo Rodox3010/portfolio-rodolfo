@@ -24,8 +24,8 @@ gsap.registerPlugin(ScrollTrigger);
                         pdfName: "Revista Cemique"
                     },
                     {
-                        pdfThumbnail: "img/academicos/identidade_diagonal/diagonal.jpg",
-                        pdfLink: "img/academicos/identidade_diagonal/diagonal.pdf",
+                        pdfThumbnail: "img/academicos/Identidade_diagonal/diagonal.jpg",
+                        pdfLink: "img/academicos/Identidade_diagonal/diagonal.pdf",
                         pdfName: "Identidade Diagonal"
                     }
                 ]
@@ -39,31 +39,31 @@ gsap.registerPlugin(ScrollTrigger);
                 imageURL: "img/alfainstrumentos/agrishow.jpg",
                 description: "Nesta área vou mostrar alguns trabalhos realizados na empresa Alfa Instrumentos.",
                 gallery: [
-                    "../img/alfainstrumentos/dia_do_cacau.jpg",
-                    "../img/alfainstrumentos/mundia_meio_ambiente.jpg",
-                    "../img/alfainstrumentos/ensacador_de_bigbag.jpg",
-                    "../img/alfainstrumentos/Indice-de-protecao-IP.jpg",
-                    "../img/alfainstrumentos/vagas.jpg",
+                    "img/alfainstrumentos/dia_do_cacau.jpg",
+                    "img/alfainstrumentos/mundia_meio_ambiente.jpg",
+                    "img/alfainstrumentos/ensacador_de_bigbag.jpg",
+                    "img/alfainstrumentos/Indice-de-protecao-IP.jpg",
+                    "img/alfainstrumentos/vagas.jpg",
                 ],
                 pdfs: [
                     {
                         
-                        pdfThumbnail: "../img/alfainstrumentos/Gif-Dosadora.gif",
-                        pdfLink: "../img/alfainstrumentos/Gif-Dosadora.gif",
+                        pdfThumbnail: "img/alfainstrumentos/Gif-Dosadora.gif",
+                        pdfLink: "img/alfainstrumentos/Gif-Dosadora.gif",
                         pdfName: "Gif Dosadora"
                     },
                     {
-                        pdfThumbnail: "../img/alfainstrumentos/Gif-Envasadora-de-liquidos.gif",
-                        pdfLink: "../img/alfainstrumentos/Gif-Envasadora-de-liquidos.gif",
+                        pdfThumbnail: "img/alfainstrumentos/Gif-Envasadora-de-liquidos.gif",
+                        pdfLink: "img/alfainstrumentos/Gif-Envasadora-de-liquidos.gif",
                         pdfName: "Gif Envasadora"
                     },
                     {
-                        pdfThumbnail: "../img/alfainstrumentos/ensacador_de_bigbag.jpg",
+                        pdfThumbnail: "img/alfainstrumentos/ensacador_de_bigbag.jpg",
                         pdfLink: "https://youtu.be/ZIHuXQJAT5Y?si=GZxOA-skp-yGENlW",
                         pdfName: "Vídeo Ensacadora de Big Bag"
                     },
                     {
-                        pdfThumbnail: "../img/alfainstrumentos/Indice-de-protecao-IP.jpg",
+                        pdfThumbnail: "img/alfainstrumentos/Indice-de-protecao-IP.jpg",
                         pdfLink: "https://youtu.be/7ZRK-z7QDKw?si=iwO2C_vtT5NLvpgk",
                         pdfName: "Vídeo Balança de bancada - IP69K"
                     },
@@ -332,6 +332,7 @@ gsap.registerPlugin(ScrollTrigger);
         window.addEventListener('load', () => {
             gsap.to('.hero-text', { y: 0, opacity: 1, duration: 1.2, stagger: 0.2, ease: "power3.out" });
         });
+
 
 
 
