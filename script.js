@@ -5,7 +5,7 @@ gsap.registerPlugin(ScrollTrigger);
         const projectsData = [
             {
                 id: 1,
-                title: "TRABALHOS ACADÊMICO",
+                title: "TRABALHOS ACADÊMICOS",
                 client: "FACULDADE UNIP",
                 year: "2012/2013",
                 category: "Trabalhos Acadêmicos",
@@ -332,6 +332,7 @@ gsap.registerPlugin(ScrollTrigger);
         window.addEventListener('load', () => {
             gsap.to('.hero-text', { y: 0, opacity: 1, duration: 1.2, stagger: 0.2, ease: "power3.out" });
         });
+
 
 
 
