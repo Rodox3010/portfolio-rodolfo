@@ -12,10 +12,10 @@ gsap.registerPlugin(ScrollTrigger);
                 imageURL: "img/academicos/allstarfinal.jpg", 
                 description: "Este projeto reúne uma seleção dos trabalhos desenvolvidos ao longo do curso de Design Gráfico. Cada exercício representou uma oportunidade de explorar diferentes áreas do design, desde identidade visual, tipografia e diagramação até fotografia, ilustração e design editorial. Durante esse período, pude experimentar, aprender técnicas, compreender processos criativos e fortalecer minha visão estética e conceitual. Esses projetos marcaram o início da minha trajetória como designer e refletem minha evolução profissional e pessoal dentro da área.",
                 gallery: [
-                    "../img/academicos/logo_idea/logo_idea_1.jpg",
-                    "../img/academicos/logo_idea/1.jpg",
-                    "../img/academicos/logo_idea/2.jpg",
-                    "../img/academicos/logo_idea/3.jpg"
+                    "img/academicos/logo_idea/logo_idea_1.jpg",
+                    "img/academicos/logo_idea/1.jpg",
+                    "img/academicos/logo_idea/2.jpg",
+                    "img/academicos/logo_idea/3.jpg"
                 ],
                 pdfs: [
                     {
@@ -332,5 +332,6 @@ gsap.registerPlugin(ScrollTrigger);
         window.addEventListener('load', () => {
             gsap.to('.hero-text', { y: 0, opacity: 1, duration: 1.2, stagger: 0.2, ease: "power3.out" });
         });
+
 
 
