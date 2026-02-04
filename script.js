@@ -165,49 +165,48 @@ gsap.registerPlugin(ScrollTrigger);
         });
 
 
-       // --- LÓGICA DO FORMULÁRIO (CORREÇÃO GITHUB PAGES) ---
-const form = document.getElementById('contact-form');
-const btnText = document.getElementById('btn-text');
-const btnSpinner = document.getElementById('btn-spinner');
-const formStatus = document.getElementById('form-status');
+      // --- LÓGICA DO FORMULÁRIO (ATUALIZADA COM SEU ID FORMSPREE) ---
+                const form = document.getElementById('contact-form');
+                const btnText = document.getElementById('btn-text');
+                const btnSpinner = document.getElementById('btn-spinner');
+                const formStatus = document.getElementById('form-status');
 
-if (form) {
-    form.addEventListener('submit', async (e) => {
-        e.preventDefault();
-
-        // 1. Inicia estado de carregamento
-        if (btnText) btnText.textContent = 'Enviando...';
-        if (btnSpinner) btnSpinner.classList.remove('hidden');
-        form.classList.add('opacity-50', 'pointer-events-none');
-
-        const formData = new FormData(form);
-
-        try {
-            // USANDO FORMSPREE (Substitua pelo seu e-mail se desejar, ou use este para testar)
-            const response = await fetch('https://formspree.io/f/rodolfo.lirancoo@gmail.com', {
-                method: 'POST',
-                body: formData,
-                headers: {
-                    'Accept': 'application/json'
-                }
-            });
-
-            if (response.ok) {
-                showStatus('Mensagem enviada com sucesso! Entrarei em contato em breve.', 'success');
-                form.reset();
-            } else {
-                showStatus('Ocorreu um erro ao enviar. Verifique os campos e tente novamente.', 'error');
-            }
-        } catch (error) {
-            showStatus('Erro de conexão. Verifique sua internet.', 'error');
-        } finally {
-            // 2. Restaura o botão após o envio
-            if (btnText) btnText.textContent = 'Enviar Mensagem';
-            if (btnSpinner) btnSpinner.classList.add('hidden');
-            form.classList.remove('opacity-50', 'pointer-events-none');
-        }
-    });
-}
+                        if (form) {
+                            form.addEventListener('submit', async (e) => {
+                                e.preventDefault();
+                        
+                                // Estado de Carregamento
+                                if (btnText) btnText.textContent = 'Enviando...';
+                                if (btnSpinner) btnSpinner.classList.remove('hidden');
+                                form.classList.add('opacity-50', 'pointer-events-none');
+                        
+                                const formData = new FormData(form);
+                        
+                                try {
+                                    // USANDO O SEU ENDPOINT ESPECÍFICO DO FORMSPREE
+                                    const response = await fetch('https://formspree.io/f/xwvqgdkn', {
+                                        method: 'POST',
+                                        body: formData,
+                                        headers: {
+                                            'Accept': 'application/json'
+                                        }
+                                    });
+                        
+                                    if (response.ok) {
+                                        showStatus('Mensagem enviada com sucesso! Entrarei em contato em breve.', 'success');
+                                        form.reset();
+                                    } else {
+                                        showStatus('Ocorreu um erro ao enviar. Tente novamente mais tarde.', 'error');
+                                    }
+                                } catch (error) {
+                                    showStatus('Erro de conexão. Verifique sua internet.', 'error');
+                                } finally {
+                                    if (btnText) btnText.textContent = 'Enviar Mensagem';
+                                    if (btnSpinner) btnSpinner.classList.add('hidden');
+                                    form.classList.remove('opacity-50', 'pointer-events-none');
+                                }
+                            });
+                        }
 
 // Função Auxiliar para as mensagens de sucesso/erro
 function showStatus(message, type) {
@@ -329,6 +328,7 @@ function showStatus(message, type) {
         window.addEventListener('load', () => {
             gsap.to('.hero-text', { y: 0, opacity: 1, duration: 1.2, stagger: 0.2, ease: "power3.out" });
         });
+
 
 
 
