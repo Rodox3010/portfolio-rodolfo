@@ -75,17 +75,17 @@ gsap.registerPlugin(ScrollTrigger);
                 client: "HJA REPRESENTAÇÕES",
                 year: "2025",
                 category: "ID",
-                imageURL: "/img/hjarepresetacao/capa1.jpg",
+                imageURL: "img/hjarepresetacao/Capa1.jpg",
                 description: "O logo foi desenvolvido para transmitir solidez, profissionalismo e a essência do representate comercial.",
                 gallery: [
-                    "../img/hjarepresetacao/capa2.jpg",
-                    "../img/hjarepresetacao/capa3.jpg",
-                    "../img/hjarepresetacao/aplicacao1.jpg",
-                    "../img/hjarepresetacao/aplicacao2.jpg",
-                    "../img/hjarepresetacao/aplicacao3.jpg",
+                    "img/hjarepresetacao/Capa2.jpg",
+                    "img/hjarepresetacao/Capa3.jpg",
+                    "img/hjarepresetacao/aplicacao1.jpg",
+                    "img/hjarepresetacao/aplicacao2.jpg",
+                    "img/hjarepresetacao/aplicacao3.jpg",
                   //  "img/hjarepresetacao/aplicacao4.jpg",
-                    "../img/hjarepresetacao/aplicacao5.jpg",
-                    "../img/hjarepresetacao/aplicacao6.jpg"
+                    "img/hjarepresetacao/aplicacao5.jpg",
+                    "img/hjarepresetacao/aplicacao6.jpg"
                 ],
               
             },
@@ -95,21 +95,21 @@ gsap.registerPlugin(ScrollTrigger);
                 client: "JA CREPES - CREPES FRANCÊS",
                 year: "2023",
                 category: "Folders",
-                imageURL: "/img/jacrepes/logo_jacrepes.png",
+                imageURL: "img/jacrepes/logo_jacrepes.png",
                 description: "Neste trabalho, realizei a vetorização do logotipo da empresa Jacrepes (recuperação), além da criação de dois tipos de anúncios para celular e o menu da empresa.",
                 gallery: [
-                    "../img/jacrepes/promo_pizza.png",
-                    "../img/jacrepes/promo_crepe.png"
+                    "img/jacrepes/promo_pizza.png",
+                    "img/jacrepes/promo_crepe.png"
                 ],
                 pdfs: [
                     {
-                        pdfThumbnail: "../img/jacrepes/capa_crepe.jpg",
-                        pdfLink: "../img/jacrepes/menu_crepe.pdf",
+                        pdfThumbnail: "img/jacrepes/capa_crepe.jpg",
+                        pdfLink: "img/jacrepes/menu_crepe.pdf",
                         pdfName: "Folder Crepe - para celular"
                     },
                     {
-                        pdfThumbnail: "../img/jacrepes/capa_pizza.jpg",
-                        pdfLink: "../img/jacrepes/menu_pizza.pdf",
+                        pdfThumbnail: "img/jacrepes/capa_pizza.jpg",
+                        pdfLink: "img/jacrepes/menu_pizza.pdf",
                         pdfName: "Folder Pizza - para celular"
                     },
                     
@@ -121,12 +121,12 @@ gsap.registerPlugin(ScrollTrigger);
                 client: "JM - José Milton",
                 year: "2022",
                 category: "Criação de Logo",
-                imageURL: "/img/jmjosemilton/Logo_3D_JM.jpg",
+                imageURL: "img/jmjosemilton/Logo_3D_JM.jpg",
                 description: "Foi criado um logo para um pequeno escritório do interior da Bahia. Além do logo, foram desenvolvidos também o cartão de visita e uma faixa para a fachada do escritório.",
                 gallery: [
-                    "../img/jmjosemilton/Moukup_Cartao.jpg",
-                    "../img/jmjosemilton/cartao_JM.png",
-                    "../img/jmjosemilton/faixa_escritorio.jpg",
+                    "img/jmjosemilton/Moukup_Cartao.jpg",
+                    "img/jmjosemilton/cartao_JM.png",
+                    "img/jmjosemilton/faixa_escritorio.jpg",
 
                 ],
                 
@@ -332,6 +332,7 @@ gsap.registerPlugin(ScrollTrigger);
         window.addEventListener('load', () => {
             gsap.to('.hero-text', { y: 0, opacity: 1, duration: 1.2, stagger: 0.2, ease: "power3.out" });
         });
+
 
 
 
