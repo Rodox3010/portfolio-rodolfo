@@ -98,17 +98,17 @@ gsap.registerPlugin(ScrollTrigger);
                 imageURL: "img/Jacrepes/logo_jacrepes.png",
                 description: "Neste trabalho, realizei a vetorização do logotipo da empresa Jacrepes (recuperação), além da criação de dois tipos de anúncios para celular e o menu da empresa.",
                 gallery: [
-                    "img/jacrepes/promo_pizza.png",
+                    "img/Jacrepes/promo_pizza.png",
                     "img/Jacrepes/promo_crepe.png"
                 ],
                 pdfs: [
                     {
-                        pdfThumbnail: "img/jacrepes/capa_crepe.jpg",
-                        pdfLink: "img/jacrepes/menu_crepe.pdf",
+                        pdfThumbnail: "img/Jacrepes/capa_crepe.jpg",
+                        pdfLink: "img/Jacrepes/menu_crepe.pdf",
                         pdfName: "Folder Crepe - para celular"
                     },
                     {
-                        pdfThumbnail: "img/jacrepes/capa_pizza.jpg",
+                        pdfThumbnail: "img/Jacrepes/capa_pizza.jpg",
                         pdfLink: "img/Jacrepes/menu_pizza.pdf",
                         pdfName: "Folder Pizza - para celular"
                     },
@@ -332,6 +332,7 @@ gsap.registerPlugin(ScrollTrigger);
         window.addEventListener('load', () => {
             gsap.to('.hero-text', { y: 0, opacity: 1, duration: 1.2, stagger: 0.2, ease: "power3.out" });
         });
+
 
 
 
