@@ -165,67 +165,64 @@ gsap.registerPlugin(ScrollTrigger);
         });
 
 
-        // --- LÓGICA DO FORMULÁRIO ---
-        const messageInput = document.getElementById('message');
-        const charCount = document.getElementById('charCount');
-        if(messageInput && charCount){
-            messageInput.addEventListener('input', function() {
-                charCount.textContent = this.value.length;
-            });
-        }
+       // --- LÓGICA DO FORMULÁRIO (CORREÇÃO GITHUB PAGES) ---
+const form = document.getElementById('contact-form');
+const btnText = document.getElementById('btn-text');
+const btnSpinner = document.getElementById('btn-spinner');
+const formStatus = document.getElementById('form-status');
 
-        const contactForm = document.getElementById('contactForm');
-        const submitBtn = document.getElementById('submitBtn');
-        const formStatus = document.getElementById('formStatus');
+if (form) {
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
 
-        if(contactForm) {
-            contactForm.addEventListener("submit", async function(event) {
-                event.preventDefault();
-                
-                const originalBtnContent = submitBtn.innerHTML;
-                submitBtn.innerHTML = '<span class="spinner"></span> Enviando...';
-                submitBtn.disabled = true;
-                submitBtn.classList.add('opacity-70', 'cursor-not-allowed');
+        // 1. Inicia estado de carregamento
+        if (btnText) btnText.textContent = 'Enviando...';
+        if (btnSpinner) btnSpinner.classList.remove('hidden');
+        form.classList.add('opacity-50', 'pointer-events-none');
 
-                const data = new FormData(event.target);
-                
-                try {
-                    const response = await fetch(event.target.action, {
-                        method: contactForm.method,
-                        body: data,
-                        headers: { 'Accept': 'application/json' }
-                    });
+        const formData = new FormData(form);
 
-                    if (response.ok) {
-                        formStatus.innerHTML = "Mensagem enviada com Sucesso!";
-                        formStatus.classList.remove('text-red-500');
-                        formStatus.classList.add('text-success-green');
-                        contactForm.reset();
-                        charCount.textContent = '0';
-                        submitBtn.innerHTML = "Enviado!";
-                    } else {
-                        throw new Error('Erro no servidor');
-                    }
-                } catch (error) {
-                    formStatus.innerHTML = "Erro ao enviar. Tente novamente.";
-                    formStatus.classList.remove('text-success-green');
-                    formStatus.classList.add('text-red-500');
-                    submitBtn.innerHTML = originalBtnContent;
-                }
-
-                formStatus.classList.remove('opacity-0');
-                
-                if(submitBtn.innerHTML === "Enviado!") {
-                    setTimeout(() => {
-                        submitBtn.innerHTML = originalBtnContent;
-                        submitBtn.disabled = false;
-                        submitBtn.classList.remove('opacity-70', 'cursor-not-allowed');
-                        formStatus.classList.add('opacity-0');
-                    }, 5000);
+        try {
+            // USANDO FORMSPREE (Substitua pelo seu e-mail se desejar, ou use este para testar)
+            const response = await fetch('https://formspree.io/f/rodolfo.lirancoo@gmail.com', {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
                 }
             });
-        }
 
+            if (response.ok) {
+                showStatus('Mensagem enviada com sucesso! Entrarei em contato em breve.', 'success');
+                form.reset();
+            } else {
+                showStatus('Ocorreu um erro ao enviar. Verifique os campos e tente novamente.', 'error');
+            }
+        } catch (error) {
+            showStatus('Erro de conexão. Verifique sua internet.', 'error');
+        } finally {
+            // 2. Restaura o botão após o envio
+            if (btnText) btnText.textContent = 'Enviar Mensagem';
+            if (btnSpinner) btnSpinner.classList.add('hidden');
+            form.classList.remove('opacity-50', 'pointer-events-none');
+        }
+    });
+}
+
+// Função Auxiliar para as mensagens de sucesso/erro
+function showStatus(message, type) {
+    if (!formStatus) return;
+    
+    formStatus.textContent = message;
+    formStatus.className = `mt-6 text-sm text-center font-medium p-4 rounded-lg transition-all duration-300 ${
+        type === 'success' ? 'bg-green-900/20 text-success-green' : 'bg-red-900/20 text-red-400'
+    }`;
+    formStatus.classList.remove('opacity-0');
+    
+    setTimeout(() => {
+        formStatus.classList.add('opacity-0');
+    }, 5000);
+}
 
         // --- LÓGICA DO DETAIL VIEW ---
         const detailView = document.getElementById('project-detail-view');
@@ -332,6 +329,7 @@ gsap.registerPlugin(ScrollTrigger);
         window.addEventListener('load', () => {
             gsap.to('.hero-text', { y: 0, opacity: 1, duration: 1.2, stagger: 0.2, ease: "power3.out" });
         });
+
 
 
 
