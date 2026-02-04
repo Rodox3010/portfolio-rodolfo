@@ -95,11 +95,11 @@ gsap.registerPlugin(ScrollTrigger);
                 client: "JA CREPES - CREPES FRANCÊS",
                 year: "2023",
                 category: "Folders",
-                imageURL: "img/jacrepes/logo_jacrepes.png",
+                imageURL: "img/Jacrepes/logo_jacrepes.png",
                 description: "Neste trabalho, realizei a vetorização do logotipo da empresa Jacrepes (recuperação), além da criação de dois tipos de anúncios para celular e o menu da empresa.",
                 gallery: [
                     "img/jacrepes/promo_pizza.png",
-                    "img/jacrepes/promo_crepe.png"
+                    "img/Jacrepes/promo_crepe.png"
                 ],
                 pdfs: [
                     {
@@ -109,7 +109,7 @@ gsap.registerPlugin(ScrollTrigger);
                     },
                     {
                         pdfThumbnail: "img/jacrepes/capa_pizza.jpg",
-                        pdfLink: "img/jacrepes/menu_pizza.pdf",
+                        pdfLink: "img/Jacrepes/menu_pizza.pdf",
                         pdfName: "Folder Pizza - para celular"
                     },
                     
@@ -332,6 +332,7 @@ gsap.registerPlugin(ScrollTrigger);
         window.addEventListener('load', () => {
             gsap.to('.hero-text', { y: 0, opacity: 1, duration: 1.2, stagger: 0.2, ease: "power3.out" });
         });
+
 
 
 
