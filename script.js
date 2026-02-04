@@ -165,48 +165,57 @@ gsap.registerPlugin(ScrollTrigger);
         });
 
 
-      // --- LÓGICA DO FORMULÁRIO (ATUALIZADA COM SEU ID FORMSPREE) ---
-                const form = document.getElementById('contact-form');
-                const btnText = document.getElementById('btn-text');
-                const btnSpinner = document.getElementById('btn-spinner');
-                const formStatus = document.getElementById('form-status');
+      // --- CONTADOR DE CARACTERES ---
+const messageInput = document.getElementById('message');
+const charCount = document.getElementById('charCount');
 
-                        if (form) {
-                            form.addEventListener('submit', async (e) => {
-                                e.preventDefault();
-                        
-                                // Estado de Carregamento
-                                if (btnText) btnText.textContent = 'Enviando...';
-                                if (btnSpinner) btnSpinner.classList.remove('hidden');
-                                form.classList.add('opacity-50', 'pointer-events-none');
-                        
-                                const formData = new FormData(form);
-                        
-                                try {
-                                    // USANDO O SEU ENDPOINT ESPECÍFICO DO FORMSPREE
-                                    const response = await fetch('https://formspree.io/f/xwvqgdkn', {
-                                        method: 'POST',
-                                        body: formData,
-                                        headers: {
-                                            'Accept': 'application/json'
-                                        }
-                                    });
-                        
-                                    if (response.ok) {
-                                        showStatus('Mensagem enviada com sucesso! Entrarei em contato em breve.', 'success');
-                                        form.reset();
-                                    } else {
-                                        showStatus('Ocorreu um erro ao enviar. Tente novamente mais tarde.', 'error');
-                                    }
-                                } catch (error) {
-                                    showStatus('Erro de conexão. Verifique sua internet.', 'error');
-                                } finally {
-                                    if (btnText) btnText.textContent = 'Enviar Mensagem';
-                                    if (btnSpinner) btnSpinner.classList.add('hidden');
-                                    form.classList.remove('opacity-50', 'pointer-events-none');
-                                }
-                            });
-                        }
+if (messageInput && charCount) {
+    messageInput.addEventListener('input', () => {
+        charCount.textContent = messageInput.value.length;
+    });
+}
+
+// --- LÓGICA DO FORMULÁRIO (SINCRONIZADA COM SEU HTML) ---
+const contactForm = document.getElementById('contactForm');
+const submitBtn = document.getElementById('submitBtn');
+const formStatus = document.getElementById('formStatus');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const btnTextSpan = submitBtn ? submitBtn.querySelector('span') : null;
+
+        // Estado de Carregamento
+        if (btnTextSpan) btnTextSpan.textContent = 'Enviando...';
+        contactForm.classList.add('opacity-50', 'pointer-events-none');
+
+        const formData = new FormData(contactForm);
+
+        try {
+            const response = await fetch('https://formspree.io/f/xwvqgdkn', {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                showStatus('Mensagem enviada com sucesso! Entrarei em contato em breve.', 'success');
+                contactForm.reset();
+                if (charCount) charCount.textContent = '0';
+            } else {
+                showStatus('Erro ao enviar. Verifique se o formulário está ativo.', 'error');
+            }
+        } catch (error) {
+            showStatus('Erro de conexão. Verifique sua internet.', 'error');
+        } finally {
+            if (btnTextSpan) btnTextSpan.textContent = 'Enviar Mensagem';
+            contactForm.classList.remove('opacity-50', 'pointer-events-none');
+        }
+    });
+}
 
 // Função Auxiliar para as mensagens de sucesso/erro
 function showStatus(message, type) {
@@ -328,6 +337,7 @@ function showStatus(message, type) {
         window.addEventListener('load', () => {
             gsap.to('.hero-text', { y: 0, opacity: 1, duration: 1.2, stagger: 0.2, ease: "power3.out" });
         });
+
 
 
 
