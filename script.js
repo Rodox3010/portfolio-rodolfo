@@ -78,8 +78,8 @@ gsap.registerPlugin(ScrollTrigger);
                 imageURL: "img/hjarepresetacao/Capa1.webp",
                 description: "O logo foi desenvolvido para transmitir solidez, profissionalismo e a essência do representate comercial.",
                 gallery: [
-                    "img/hjarepresetacao/capa2.webp",
-                    "img/hjarepresetacao/capa3.webp",
+                    "img/hjarepresetacao/Capa2.webp",
+                    "img/hjarepresetacao/Capa3.webp",
                     "img/hjarepresetacao/aplicacao1.webp",
                     "img/hjarepresetacao/aplicacao2.webp",
                     "img/hjarepresetacao/aplicacao3.webp",
@@ -340,5 +340,6 @@ gsap.registerPlugin(ScrollTrigger);
         window.addEventListener('load', () => {
             gsap.to('.hero-text', { y: 0, opacity: 1, duration: 1.2, stagger: 0.2, ease: "power3.out" });
         });
+
 
 
