@@ -36,34 +36,33 @@ gsap.registerPlugin(ScrollTrigger);
                 client: "ALFA INSTRUMENTO",
                 year: "2019/2021",
                 category: "Web Design/Design Gráfico",
-                imageURL: "/img/alfainstrumentos/agrishow.webp",
+                imageURL: "img/alfainstrumentos/agrishow-alfa-instrumentos.webp",
                 description: "Nesta área vou mostrar alguns trabalhos realizados na empresa Alfa Instrumentos.",
                 gallery: [
-                    "../img/alfainstrumentos/dia_do_cacau.webp",
-                    "../img/alfainstrumentos/mundia_meio_ambiente.webp",
-                    "../img/alfainstrumentos/ensacador_de_bigbag.webp",
-                    "../img/alfainstrumentos/Indice-de-protecao-IP.webp",
-                    "../img/alfainstrumentos/vagas.webp",
+                    "img/alfainstrumentos/dia-do-cacau.webp",
+                    "img/alfainstrumentos/dia-mundia-meio-ambiente.webp",
+                    "img/alfainstrumentos/ensacador-velocidade.webp",
+                    "img/alfainstrumentos/anuncio-vagas.webp",
                 ],
                 pdfs: [
                     {
                         
-                        pdfThumbnail: "../img/alfainstrumentos/Gif-Dosadora.gif",
-                        pdfLink: "../img/alfainstrumentos/Gif-Dosadora.gif",
+                        pdfThumbnail: "img/alfainstrumentos/gif-dosadora.gif",
+                        pdfLink: "img/alfainstrumentos/gif-dosadora.gif",
                         pdfName: "Gif Dosadora"
                     },
                     {
-                        pdfThumbnail: "../img/alfainstrumentos/Gif-Envasadora-de-liquidos.gif",
-                        pdfLink: "../img/alfainstrumentos/Gif-Envasadora-de-liquidos.gif",
+                        pdfThumbnail: "img/alfainstrumentos/gif-envasadora-de-liquidos.gif",
+                        pdfLink: "img/alfainstrumentos/gif-envasadora-de-liquidos.gif",
                         pdfName: "Gif Envasadora"
                     },
                     {
-                        pdfThumbnail: "../img/alfainstrumentos/ensacador_de_bigbag.webp",
+                        pdfThumbnail: "img/alfainstrumentos/ensacador-big-bag.webp",
                         pdfLink: "https://youtu.be/ZIHuXQJAT5Y?si=GZxOA-skp-yGENlW",
                         pdfName: "Vídeo Ensacadora de Big Bag"
                     },
                     {
-                        pdfThumbnail: "../img/alfainstrumentos/Indice-de-protecao-IP.webp",
+                        pdfThumbnail: "img/alfainstrumentos/indice-de-protecao-ip.webp",
                         pdfLink: "https://youtu.be/7ZRK-z7QDKw?si=iwO2C_vtT5NLvpgk",
                         pdfName: "Vídeo Balança de bancada - IP69K"
                     },
@@ -340,6 +339,7 @@ gsap.registerPlugin(ScrollTrigger);
         window.addEventListener('load', () => {
             gsap.to('.hero-text', { y: 0, opacity: 1, duration: 1.2, stagger: 0.2, ease: "power3.out" });
         });
+
 
 
 
