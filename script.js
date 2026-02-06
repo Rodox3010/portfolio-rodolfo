@@ -12,10 +12,10 @@ gsap.registerPlugin(ScrollTrigger);
                 imageURL: "img/academicos/allstarfinal.webp", 
                 description: "Este projeto reúne uma seleção dos trabalhos desenvolvidos ao longo do curso de Design Gráfico. Cada exercício representou uma oportunidade de explorar diferentes áreas do design, desde identidade visual, tipografia e diagramação até fotografia, ilustração e design editorial. Durante esse período, pude experimentar, aprender técnicas, compreender processos criativos e fortalecer minha visão estética e conceitual. Esses projetos marcaram o início da minha trajetória como designer e refletem minha evolução profissional e pessoal dentro da área.",
                 gallery: [
-                    "../img/academicos/logo_idea/logo_idea_1.webp",
-                    "../img/academicos/logo_idea/1.webp",
-                    "../img/academicos/logo_idea/2.webp",
-                    "../img/academicos/logo_idea/3.webp"
+                    "img/academicos/logo_idea/logo-idea.webp",
+                    "img/academicos/logo_idea/outdoor-idea.webp",
+                    "img/academicos/logo_idea/caixa-lampada-idea-aberta.webp",
+                    "img/academicos/logo_idea/caixa-lampada-idea-fechada.webp"
                 ],
                 pdfs: [
                     {
@@ -24,8 +24,8 @@ gsap.registerPlugin(ScrollTrigger);
                         pdfName: "Revista Cemique"
                     },
                     {
-                        pdfThumbnail: "../img/academicos/identidade_diagonal/diagonal.webp",
-                        pdfLink: "../img/academicos/identidade_diagonal/diagonal.pdf",
+                        pdfThumbnail: "img/academicos/Identidade_diagonal/capa-diagonal-games.webp",
+                        pdfLink: "img/academicos/identidade_diagonal/diagonal.pdf",
                         pdfName: "Identidade Diagonal"
                     }
                 ]
@@ -340,6 +340,7 @@ gsap.registerPlugin(ScrollTrigger);
         window.addEventListener('load', () => {
             gsap.to('.hero-text', { y: 0, opacity: 1, duration: 1.2, stagger: 0.2, ease: "power3.out" });
         });
+
 
 
 
