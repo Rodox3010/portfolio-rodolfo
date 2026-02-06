@@ -5,7 +5,7 @@ gsap.registerPlugin(ScrollTrigger);
         const projectsData = [
             {
                 id: 1,
-                title: "TRABALHOS ACADÊMICO",
+                title: "TRABALHOS ACADÊMICOS",
                 client: "FACULDADE UNIP",
                 year: "2012/2013",
                 category: "Trabalhos Acadêmicos",
@@ -33,7 +33,7 @@ gsap.registerPlugin(ScrollTrigger);
             {
                 id: 2,
                 title: "ALFA INSTRUMENTOS",
-                client: "ALFA INSTRUMENTO",
+                client: "ALFA INSTRUMENTOS",
                 year: "2019/2021",
                 category: "Web Design/Design Gráfico",
                 imageURL: "img/alfainstrumentos/agrishow-alfa-instrumentos.webp",
@@ -70,7 +70,7 @@ gsap.registerPlugin(ScrollTrigger);
             },
             {
                 id: 3,
-                title: "IDENTIDADE VISUAL",
+                title: "HJA REPRESENTAÇÕES",
                 client: "HJA REPRESENTAÇÕES",
                 year: "2025",
                 category: "ID",
@@ -98,7 +98,7 @@ gsap.registerPlugin(ScrollTrigger);
             },
             {
                 id: 4,
-                title: "MENU/VETORIZAÇÃO/ANÚNCIO",
+                title: "JACREPES",
                 client: "JACREPES - CREPES FRANCÊS",
                 year: "2023",
                 category: "Folders",
@@ -128,12 +128,12 @@ gsap.registerPlugin(ScrollTrigger);
                 client: "JM - José Milton",
                 year: "2022",
                 category: "Criação de Logo",
-                imageURL: "/img/jmjosemilton/Logo_3D_JM.webp",
+                imageURL: "img/jmjosemilton/logo-3d-jm.webp",
                 description: "Foi criado um logo para um pequeno escritório do interior da Bahia. Além do logo, foram desenvolvidos também o cartão de visita e uma faixa para a fachada do escritório.",
                 gallery: [
-                    "../img/jmjosemilton/Moukup_Cartao.webp",
-                    "../img/jmjosemilton/cartao_JM.webp",
-                    "../img/jmjosemilton/faixa_escritorio.webp",
+                    "img/jmjosemilton/moukup-cartao.webp",
+                    "img/jmjosemilton/cartao-jm.webp",
+                    "img/jmjosemilton/faixa-escritorio.webp",
 
                 ],
                 
@@ -339,6 +339,7 @@ gsap.registerPlugin(ScrollTrigger);
         window.addEventListener('load', () => {
             gsap.to('.hero-text', { y: 0, opacity: 1, duration: 1.2, stagger: 0.2, ease: "power3.out" });
         });
+
 
 
 
