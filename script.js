@@ -87,12 +87,14 @@ gsap.registerPlugin(ScrollTrigger);
                   //"img/hjarepresetacao/aplicacao5.webp",
                   //"img/hjarepresetacao/aplicacao6.webp"
                 ],
-                 pdfs: [
-                    {
+                pdfs: [
+                       {
                         pdfThumbnail: "img/hjarepresetacao/Capa1.webp",
                         pdfLink: "img/hjarepresetacao/id_hja_representacoes.pdf",
                         pdfName: "Identidade Visual Completa"
-                    },
+                      }
+                ]
+                 
               
             },
             {
@@ -338,4 +340,5 @@ gsap.registerPlugin(ScrollTrigger);
         window.addEventListener('load', () => {
             gsap.to('.hero-text', { y: 0, opacity: 1, duration: 1.2, stagger: 0.2, ease: "power3.out" });
         });
+
 
