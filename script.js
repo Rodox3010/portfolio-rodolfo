@@ -5,27 +5,27 @@ gsap.registerPlugin(ScrollTrigger);
         const projectsData = [
             {
                 id: 1,
-                title: "TRABALHOS ACADÊMICOS",
+                title: "TRABALHOS ACADÊMICO",
                 client: "FACULDADE UNIP",
                 year: "2012/2013",
                 category: "Trabalhos Acadêmicos",
-                imageURL: "img/academicos/allstarfinal.jpg", 
+                imageURL: "/img/academicos/allstarfinal.webp", 
                 description: "Este projeto reúne uma seleção dos trabalhos desenvolvidos ao longo do curso de Design Gráfico. Cada exercício representou uma oportunidade de explorar diferentes áreas do design, desde identidade visual, tipografia e diagramação até fotografia, ilustração e design editorial. Durante esse período, pude experimentar, aprender técnicas, compreender processos criativos e fortalecer minha visão estética e conceitual. Esses projetos marcaram o início da minha trajetória como designer e refletem minha evolução profissional e pessoal dentro da área.",
                 gallery: [
-                    "img/academicos/logo_idea/logo_idea_1.jpg",
-                    "img/academicos/logo_idea/1.jpg",
-                    "img/academicos/logo_idea/2.jpg",
-                    "img/academicos/logo_idea/3.jpg"
+                    "../img/academicos/logo_idea/logo_idea_1.webp",
+                    "../img/academicos/logo_idea/1.webp",
+                    "../img/academicos/logo_idea/2.webp",
+                    "../img/academicos/logo_idea/3.webp"
                 ],
                 pdfs: [
                     {
-                        pdfThumbnail: "img/academicos/revistacmique/revistacemique.jpg",
-                        pdfLink: "img/academicos/revistacmique/revistacemique.pdf",
+                        pdfThumbnail: "../img/academicos/revistacmique/revistacemique.webp",
+                        pdfLink: "../img/academicos/revistacmique/revistacemique.pdf",
                         pdfName: "Revista Cemique"
                     },
                     {
-                        pdfThumbnail: "img/academicos/Identidade_diagonal/diagonal.jpg",
-                        pdfLink: "img/academicos/Identidade_diagonal/diagonal.pdf",
+                        pdfThumbnail: "../img/academicos/identidade_diagonal/diagonal.webp",
+                        pdfLink: "../img/academicos/identidade_diagonal/diagonal.pdf",
                         pdfName: "Identidade Diagonal"
                     }
                 ]
@@ -36,37 +36,37 @@ gsap.registerPlugin(ScrollTrigger);
                 client: "ALFA INSTRUMENTO",
                 year: "2019/2021",
                 category: "Web Design/Design Gráfico",
-                imageURL: "img/alfainstrumentos/agrishow.jpg",
+                imageURL: "/img/alfainstrumentos/agrishow.webp",
                 description: "Nesta área vou mostrar alguns trabalhos realizados na empresa Alfa Instrumentos.",
                 gallery: [
-                    "img/alfainstrumentos/dia_do_cacau.jpg",
-                    "img/alfainstrumentos/mundia_meio_ambiente.jpg",
-                    "img/alfainstrumentos/ensacador_de_bigbag.jpg",
-                    "img/alfainstrumentos/Indice-de-protecao-IP.jpg",
-                    "img/alfainstrumentos/vagas.jpg",
+                    "../img/alfainstrumentos/dia_do_cacau.webp",
+                    "../img/alfainstrumentos/mundia_meio_ambiente.webp",
+                    "../img/alfainstrumentos/ensacador_de_bigbag.webp",
+                    "../img/alfainstrumentos/Indice-de-protecao-IP.webp",
+                    "../img/alfainstrumentos/vagas.webp",
                 ],
                 pdfs: [
                     {
                         
-                        pdfThumbnail: "img/alfainstrumentos/Gif-Dosadora.gif",
-                        pdfLink: "img/alfainstrumentos/Gif-Dosadora.gif",
+                        pdfThumbnail: "../img/alfainstrumentos/Gif-Dosadora.gif",
+                        pdfLink: "../img/alfainstrumentos/Gif-Dosadora.gif",
                         pdfName: "Gif Dosadora"
                     },
                     {
-                        pdfThumbnail: "img/alfainstrumentos/Gif-Envasadora-de-liquidos.gif",
-                        pdfLink: "img/alfainstrumentos/Gif-Envasadora-de-liquidos.gif",
+                        pdfThumbnail: "../img/alfainstrumentos/Gif-Envasadora-de-liquidos.gif",
+                        pdfLink: "../img/alfainstrumentos/Gif-Envasadora-de-liquidos.gif",
                         pdfName: "Gif Envasadora"
                     },
                     {
-                        pdfThumbnail: "img/alfainstrumentos/ensacador_de_bigbag.jpg",
+                        pdfThumbnail: "../img/alfainstrumentos/ensacador_de_bigbag.webp",
                         pdfLink: "https://youtu.be/ZIHuXQJAT5Y?si=GZxOA-skp-yGENlW",
                         pdfName: "Vídeo Ensacadora de Big Bag"
                     },
                     {
-                        pdfThumbnail: "img/alfainstrumentos/Indice-de-protecao-IP.jpg",
+                        pdfThumbnail: "../img/alfainstrumentos/Indice-de-protecao-IP.webp",
                         pdfLink: "https://youtu.be/7ZRK-z7QDKw?si=iwO2C_vtT5NLvpgk",
                         pdfName: "Vídeo Balança de bancada - IP69K"
-                    }
+                    },
                 ]
             },
             {
@@ -75,21 +75,18 @@ gsap.registerPlugin(ScrollTrigger);
                 client: "HJA REPRESENTAÇÕES",
                 year: "2025",
                 category: "ID",
-                imageURL: "img/hjarepresetacao/Capa1.webp",
+                imageURL: "/img/hjarepresetacao/capa1.webp",
                 description: "O logo foi desenvolvido para transmitir solidez, profissionalismo e a essência do representate comercial.",
                 gallery: [
-                    "img/hjarepresetacao/Capa2.webp",
-                    "img/hjarepresetacao/Capa3.webp",
-                    "img/hjarepresetacao/aplicacao1.webp",
-                    "img/hjarepresetacao/aplicacao2.webp",
-                    "img/hjarepresetacao/aplicacao3.webp",
+                    "../img/hjarepresetacao/capa2.webp",
+                    "../img/hjarepresetacao/capa3.webp",
+                    "../img/hjarepresetacao/aplicacao1.webp",
+                    "../img/hjarepresetacao/aplicacao2.webp",
+                    "../img/hjarepresetacao/aplicacao3.webp",
+                  //  "img/hjarepresetacao/aplicacao4.webp",
+                    "../img/hjarepresetacao/aplicacao5.webp",
+                    "../img/hjarepresetacao/aplicacao6.webp"
                 ],
-                    pdfs: [
-                    {
-                        pdfThumbnail: "img/hjarepresetacao/Capa1.webp",
-                        pdfLink: "img/hjarepresetacao/id_hja_representacoes.pdf",
-                        pdfName: "Apresetação Identidade Visual - Completa"
-                    }
               
             },
             {
@@ -98,21 +95,21 @@ gsap.registerPlugin(ScrollTrigger);
                 client: "JA CREPES - CREPES FRANCÊS",
                 year: "2023",
                 category: "Folders",
-                imageURL: "img/Jacrepes/logo_jacrepes.png",
+                imageURL: "/img/jacrepes/logo_jacrepes.webp",
                 description: "Neste trabalho, realizei a vetorização do logotipo da empresa Jacrepes (recuperação), além da criação de dois tipos de anúncios para celular e o menu da empresa.",
                 gallery: [
-                    "img/Jacrepes/promo_pizza.png",
-                    "img/Jacrepes/promo_crepe.png"
+                    "../img/jacrepes/promo_pizza.webp",
+                    "../img/jacrepes/promo_crepe.webp"
                 ],
                 pdfs: [
                     {
-                        pdfThumbnail: "img/Jacrepes/capa_crepe.jpg",
-                        pdfLink: "img/Jacrepes/menu_crepe.pdf",
+                        pdfThumbnail: "../img/jacrepes/capa_crepe.webp",
+                        pdfLink: "../img/jacrepes/menu_crepe.pdf",
                         pdfName: "Folder Crepe - para celular"
                     },
                     {
-                        pdfThumbnail: "img/Jacrepes/capa_pizza.jpg",
-                        pdfLink: "img/Jacrepes/menu_pizza.pdf",
+                        pdfThumbnail: "../img/jacrepes/capa_pizza.webp",
+                        pdfLink: "../img/jacrepes/menu_pizza.pdf",
                         pdfName: "Folder Pizza - para celular"
                     },
                     
@@ -124,12 +121,12 @@ gsap.registerPlugin(ScrollTrigger);
                 client: "JM - José Milton",
                 year: "2022",
                 category: "Criação de Logo",
-                imageURL: "img/jmjosemilton/Logo_3D_JM.jpg",
+                imageURL: "/img/jmjosemilton/Logo_3D_JM.webp",
                 description: "Foi criado um logo para um pequeno escritório do interior da Bahia. Além do logo, foram desenvolvidos também o cartão de visita e uma faixa para a fachada do escritório.",
                 gallery: [
-                    "img/jmjosemilton/Moukup_Cartao.jpg",
-                    "img/jmjosemilton/cartao_JM.png",
-                    "img/jmjosemilton/faixa_escritorio.jpg",
+                    "../img/jmjosemilton/Moukup_Cartao.webp",
+                    "../img/jmjosemilton/cartao_JM.webp",
+                    "../img/jmjosemilton/faixa_escritorio.webp",
 
                 ],
                 
@@ -168,72 +165,67 @@ gsap.registerPlugin(ScrollTrigger);
         });
 
 
-      // --- CONTADOR DE CARACTERES ---
-const messageInput = document.getElementById('message');
-const charCount = document.getElementById('charCount');
+        // --- LÓGICA DO FORMULÁRIO ---
+        const messageInput = document.getElementById('message');
+        const charCount = document.getElementById('charCount');
+        if(messageInput && charCount){
+            messageInput.addEventListener('input', function() {
+                charCount.textContent = this.value.length;
+            });
+        }
 
-if (messageInput && charCount) {
-    messageInput.addEventListener('input', () => {
-        charCount.textContent = messageInput.value.length;
-    });
-}
+        const contactForm = document.getElementById('contactForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const formStatus = document.getElementById('formStatus');
 
-// --- LÓGICA DO FORMULÁRIO (SINCRONIZADA COM SEU HTML) ---
-const contactForm = document.getElementById('contactForm');
-const submitBtn = document.getElementById('submitBtn');
-const formStatus = document.getElementById('formStatus');
+        if(contactForm) {
+            contactForm.addEventListener("submit", async function(event) {
+                event.preventDefault();
+                
+                const originalBtnContent = submitBtn.innerHTML;
+                submitBtn.innerHTML = '<span class="spinner"></span> Enviando...';
+                submitBtn.disabled = true;
+                submitBtn.classList.add('opacity-70', 'cursor-not-allowed');
 
-if (contactForm) {
-    contactForm.addEventListener('submit', async (e) => {
-        e.preventDefault();
+                const data = new FormData(event.target);
+                
+                try {
+                    const response = await fetch(event.target.action, {
+                        method: contactForm.method,
+                        body: data,
+                        headers: { 'Accept': 'application/json' }
+                    });
 
-        const btnTextSpan = submitBtn ? submitBtn.querySelector('span') : null;
+                    if (response.ok) {
+                        formStatus.innerHTML = "Mensagem enviada com Sucesso!";
+                        formStatus.classList.remove('text-red-500');
+                        formStatus.classList.add('text-success-green');
+                        contactForm.reset();
+                        charCount.textContent = '0';
+                        submitBtn.innerHTML = "Enviado!";
+                    } else {
+                        throw new Error('Erro no servidor');
+                    }
+                } catch (error) {
+                    formStatus.innerHTML = "Erro ao enviar. Tente novamente.";
+                    formStatus.classList.remove('text-success-green');
+                    formStatus.classList.add('text-red-500');
+                    submitBtn.innerHTML = originalBtnContent;
+                }
 
-        // Estado de Carregamento
-        if (btnTextSpan) btnTextSpan.textContent = 'Enviando...';
-        contactForm.classList.add('opacity-50', 'pointer-events-none');
-
-        const formData = new FormData(contactForm);
-
-        try {
-            const response = await fetch('https://formspree.io/f/xwvqgdkn', {
-                method: 'POST',
-                body: formData,
-                headers: {
-                    'Accept': 'application/json'
+                formStatus.classList.remove('opacity-0');
+                
+                if(submitBtn.innerHTML === "Enviado!") {
+                    setTimeout(() => {
+                        submitBtn.innerHTML = originalBtnContent;
+                        submitBtn.disabled = false;
+                        submitBtn.classList.remove('opacity-70', 'cursor-not-allowed');
+                        formStatus.classList.add('opacity-0');
+                    }, 5000);
                 }
             });
-
-            if (response.ok) {
-                showStatus('Mensagem enviada com sucesso! Entrarei em contato em breve.', 'success');
-                contactForm.reset();
-                if (charCount) charCount.textContent = '0';
-            } else {
-                showStatus('Erro ao enviar. Verifique se o formulário está ativo.', 'error');
-            }
-        } catch (error) {
-            showStatus('Erro de conexão. Verifique sua internet.', 'error');
-        } finally {
-            if (btnTextSpan) btnTextSpan.textContent = 'Enviar Mensagem';
-            contactForm.classList.remove('opacity-50', 'pointer-events-none');
         }
-    });
-}
 
-// Função Auxiliar para as mensagens de sucesso/erro
-function showStatus(message, type) {
-    if (!formStatus) return;
-    
-    formStatus.textContent = message;
-    formStatus.className = `mt-6 text-sm text-center font-medium p-4 rounded-lg transition-all duration-300 ${
-        type === 'success' ? 'bg-green-900/20 text-success-green' : 'bg-red-900/20 text-red-400'
-    }`;
-    formStatus.classList.remove('opacity-0');
-    
-    setTimeout(() => {
-        formStatus.classList.add('opacity-0');
-    }, 5000);
-}
 
         // --- LÓGICA DO DETAIL VIEW ---
         const detailView = document.getElementById('project-detail-view');
@@ -340,18 +332,3 @@ function showStatus(message, type) {
         window.addEventListener('load', () => {
             gsap.to('.hero-text', { y: 0, opacity: 1, duration: 1.2, stagger: 0.2, ease: "power3.out" });
         });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
