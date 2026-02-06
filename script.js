@@ -75,26 +75,18 @@ gsap.registerPlugin(ScrollTrigger);
                 client: "HJA REPRESENTAÇÕES",
                 year: "2025",
                 category: "ID",
-                imageURL: "img/hjarepresetacao/Capa1.webp",
+                imageURL: "/img/hjarepresetacao/capa1.webp",
                 description: "O logo foi desenvolvido para transmitir solidez, profissionalismo e a essência do representate comercial.",
                 gallery: [
-                    "img/hjarepresetacao/capa2.webp",
-                    "img/hjarepresetacao/capa3.webp",
-                    "img/hjarepresetacao/aplicacao1.webp",
-                    "img/hjarepresetacao/aplicacao2.webp",
-                    "img/hjarepresetacao/aplicacao3.webp",
-                  //"img/hjarepresetacao/aplicacao4.webp",
-                  //"img/hjarepresetacao/aplicacao5.webp",
-                  //"img/hjarepresetacao/aplicacao6.webp"
+                    "../img/hjarepresetacao/capa2.webp",
+                    "../img/hjarepresetacao/capa3.webp",
+                    "../img/hjarepresetacao/aplicacao1.webp",
+                    "../img/hjarepresetacao/aplicacao2.webp",
+                    "../img/hjarepresetacao/aplicacao3.webp",
+                  //  "img/hjarepresetacao/aplicacao4.webp",
+                    "../img/hjarepresetacao/aplicacao5.webp",
+                    "../img/hjarepresetacao/aplicacao6.webp"
                 ],
-                pdfs: [
-                       {
-                        pdfThumbnail: "img/hjarepresetacao/Capa1.webp",
-                        pdfLink: "img/hjarepresetacao/id_hja_representacoes.pdf",
-                        pdfName: "Identidade Visual Completa"
-                      }
-                ]
-                 
               
             },
             {
@@ -340,5 +332,3 @@ gsap.registerPlugin(ScrollTrigger);
         window.addEventListener('load', () => {
             gsap.to('.hero-text', { y: 0, opacity: 1, duration: 1.2, stagger: 0.2, ease: "power3.out" });
         });
-
-
