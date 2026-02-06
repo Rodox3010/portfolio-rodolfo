@@ -66,7 +66,7 @@ gsap.registerPlugin(ScrollTrigger);
                         pdfThumbnail: "img/alfainstrumentos/Indice-de-protecao-IP.jpg",
                         pdfLink: "https://youtu.be/7ZRK-z7QDKw?si=iwO2C_vtT5NLvpgk",
                         pdfName: "Vídeo Balança de bancada - IP69K"
-                    },
+                    }
                 ]
             },
             {
@@ -89,7 +89,7 @@ gsap.registerPlugin(ScrollTrigger);
                         pdfThumbnail: "img/hjarepresetacao/Capa1.webp",
                         pdfLink: "img/hjarepresetacao/id_hja_representacoes.pdf",
                         pdfName: "Apresetação Identidade Visual - Completa"
-                    },
+                    }
               
             },
             {
@@ -340,6 +340,7 @@ function showStatus(message, type) {
         window.addEventListener('load', () => {
             gsap.to('.hero-text', { y: 0, opacity: 1, duration: 1.2, stagger: 0.2, ease: "power3.out" });
         });
+
 
 
 
