@@ -131,7 +131,7 @@ gsap.registerPlugin(ScrollTrigger);
                 imageURL: "img/jmjosemilton/logo-3d-jm.webp",
                 description: "Foi criado um logo para um pequeno escritório do interior da Bahia. Além do logo, foram desenvolvidos também o cartão de visita e uma faixa para a fachada do escritório.",
                 gallery: [
-                    "img/jmjosemilton/moukup-cartao.webp",
+                    "img/jmjosemilton/moukup-cartao-novo.webp",
                     "img/jmjosemilton/cartao-jm-novo.webp",
                     "img/jmjosemilton/faixa-escritorio.webp",
 
@@ -339,6 +339,7 @@ gsap.registerPlugin(ScrollTrigger);
         window.addEventListener('load', () => {
             gsap.to('.hero-text', { y: 0, opacity: 1, duration: 1.2, stagger: 0.2, ease: "power3.out" });
         });
+
 
 
 
